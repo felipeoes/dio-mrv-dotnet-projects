@@ -4,11 +4,11 @@ namespace Dioflix.Interfaces
 {
     public interface IRepositorio<T>
     {
-        List<T> Lista();
-        T RetornaPorId(int id);        
-        void Insere(T entidade);        
-        void Exclui(int id);        
-        void Atualiza(int id, T entidade);
-        int ProximoId();
+        List<T> List();
+        T ReturnByID(int id);
+        void Add(T entity);
+        void Delete(int id);
+        void Update(int id, T entity);
+        int NextId();
     }
 }

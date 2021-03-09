@@ -4,163 +4,177 @@ namespace Dioflix
 {
     class Program
     {
-        static SerieRepositorio repositorio = new SerieRepositorio();
         static void Main(string[] args)
         {
-            string opcaoUsuario = ObterOpcaoUsuario();
+            string userSelection = getUserSelection();
 
-			while (opcaoUsuario.ToUpper() != "X")
-			{
-				switch (opcaoUsuario)
-				{
-					case "1":
-						ListarSeries();
-						break;
-					case "2":
-						InserirSerie();
-						break;
-					case "3":
-						AtualizarSerie();
-						break;
-					case "4":
-						ExcluirSerie();
-						break;
-					case "5":
-						VisualizarSerie();
-						break;
-					case "C":
-						Console.Clear();
-						break;
+            while (userSelection.ToUpper() != "X")
+            {
+                switch (userSelection)
+                {
+                    case "1":
+                        showSeriesOptions("series");
+                        break;
+                    case "2":
+                        showMoviesOptions("movies");
+                        break;
+                    case "3":
+                        showAnimesOptions("animes");
+                        break;
 
-					default:
-						throw new ArgumentOutOfRangeException();
-				}
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
 
-				opcaoUsuario = ObterOpcaoUsuario();
-			}
+                userSelection = getUserSelection();
+            }
 
-			Console.WriteLine("Obrigado por utilizar nossos serviços.");
-			Console.ReadLine();
+            Console.WriteLine("Obrigado por utilizar nossos serviços.");
+
         }
 
-        private static void ExcluirSerie()
-		{
-			Console.Write("Digite o id da série: ");
-			int indiceSerie = int.Parse(Console.ReadLine());
+        private static string showSeriesOptions(string s)
+        {
+            string userOption = getUserOption(s);
 
-			repositorio.Exclui(indiceSerie);
-		}
+            while (userOption.ToUpper() != "X")
+            {
+                switch (userOption)
+                {
+                    case "1":
+                        Serie.SerieActions.ListSeries();
+                        break;
+                    case "2":
+                        Serie.SerieActions.AddSerie();
+                        break;
+                    case "3":
+                        Serie.SerieActions.UpdateSerie();
+                        break;
+                    case "4":
+                        Serie.SerieActions.DeleteSerie();
+                        break;
+                    case "5":
+                        Serie.SerieActions.VisualizeSerie();
+                        break;
+                    case "C":
+                        Console.Clear();
+                        break;
 
-        private static void VisualizarSerie()
-		{
-			Console.Write("Digite o id da série: ");
-			int indiceSerie = int.Parse(Console.ReadLine());
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
 
-			var serie = repositorio.RetornaPorId(indiceSerie);
+                userOption = getUserOption(s);
+            }
+            return "X";
+        }
 
-			Console.WriteLine(serie);
-		}
+        private static string showMoviesOptions(string s)
+        {
+            string userOption = getUserOption(s);
 
-        private static void AtualizarSerie()
-		{
-			Console.Write("Digite o id da série: ");
-			int indiceSerie = int.Parse(Console.ReadLine());
+            while (userOption.ToUpper() != "X")
+            {
+                switch (userOption)
+                {
+                    case "1":
+                        Movie.MovieActions.ListMovies();
+                        break;
+                    case "2":
+                        Movie.MovieActions.AddMovie();
+                        break;
+                    case "3":
+                        Movie.MovieActions.UpdateMovie();
+                        break;
+                    case "4":
+                        Movie.MovieActions.DeleteMovie();
+                        break;
+                    case "5":
+                        Movie.MovieActions.VisualizeMovie();
+                        break;
+                    case "C":
+                        Console.Clear();
+                        break;
 
-			// https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getvalues?view=netcore-3.1
-			// https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getname?view=netcore-3.1
-			foreach (int i in Enum.GetValues(typeof(Genero)))
-			{
-				Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Genero), i));
-			}
-			Console.Write("Digite o gênero entre as opções acima: ");
-			int entradaGenero = int.Parse(Console.ReadLine());
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
 
-			Console.Write("Digite o Título da Série: ");
-			string entradaTitulo = Console.ReadLine();
+                userOption = getUserOption(s);
+            }
+            return "X";
+        }
 
-			Console.Write("Digite o Ano de Início da Série: ");
-			int entradaAno = int.Parse(Console.ReadLine());
+        private static string showAnimesOptions(string s)
+        {
+            string userOption = getUserOption(s);
 
-			Console.Write("Digite a Descrição da Série: ");
-			string entradaDescricao = Console.ReadLine();
+            while (userOption.ToUpper() != "X")
+            {
+                switch (userOption)
+                {
+                    case "1":
+                        Anime.AnimeActions.ListAnimes();
+                        break;
+                    case "2":
+                        Anime.AnimeActions.AddAnime();
+                        break;
+                    case "3":
+                        Anime.AnimeActions.UpdateAnime();
+                        break;
+                    case "4":
+                        Anime.AnimeActions.DeleteAnime();
+                        break;
+                    case "5":
+                        Anime.AnimeActions.VisualizeAnime();
+                        break;
+                    case "C":
+                        Console.Clear();
+                        break;
 
-			Serie atualizaSerie = new Serie(id: indiceSerie,
-										genero: (Genero)entradaGenero,
-										titulo: entradaTitulo,
-										ano: entradaAno,
-										descricao: entradaDescricao);
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
 
-			repositorio.Atualiza(indiceSerie, atualizaSerie);
-		}
-        private static void ListarSeries()
-		{
-			Console.WriteLine("Listar séries");
+                userOption = getUserOption(s);
+            }
+            return "X";
 
-			var lista = repositorio.Lista();
+        }
+        private static string getUserSelection()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Dioflix at your disposal!");
+            Console.WriteLine("Inform desired option:");
 
-			if (lista.Count == 0)
-			{
-				Console.WriteLine("Nenhuma série cadastrada.");
-				return;
-			}
+            Console.WriteLine("1- Navigate to series");
+            Console.WriteLine("2- Navigate to movies");
+            Console.WriteLine("3- Navigate to animes");
+            Console.WriteLine("X- Leave");
+            Console.WriteLine();
 
-			foreach (var serie in lista)
-			{
-                var excluido = serie.retornaExcluido();
-                
-				Console.WriteLine("#ID {0}: - {1} {2}", serie.retornaId(), serie.retornaTitulo(), (excluido ? "*Excluído*" : ""));
-			}
-		}
+            string userSelection = Console.ReadLine().ToUpper();
+            Console.WriteLine();
+            return userSelection;
+        }
+        private static string getUserOption(string s)
+        {
+            Console.WriteLine();
+            Console.WriteLine("Dioflix a seu dispor!!!");
+            Console.WriteLine("Inform desired option:");
 
-        private static void InserirSerie()
-		{
-			Console.WriteLine("Inserir nova série");
+            Console.WriteLine($"1- List {s}");
+            Console.WriteLine($"2- Add new {s}");
+            Console.WriteLine($"3- Update {s}");
+            Console.WriteLine($"4- Delete {s}");
+            Console.WriteLine($"5- Visualize {s}");
+            Console.WriteLine($"C- Clear screen");
+            Console.WriteLine($"X- Leave");
+            Console.WriteLine();
 
-			// https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getvalues?view=netcore-3.1
-			// https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getname?view=netcore-3.1
-			foreach (int i in Enum.GetValues(typeof(Genero)))
-			{
-				Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Genero), i));
-			}
-			Console.Write("Digite o gênero entre as opções acima: ");
-			int entradaGenero = int.Parse(Console.ReadLine());
-
-			Console.Write("Digite o Título da Série: ");
-			string entradaTitulo = Console.ReadLine();
-
-			Console.Write("Digite o Ano de Início da Série: ");
-			int entradaAno = int.Parse(Console.ReadLine());
-
-			Console.Write("Digite a Descrição da Série: ");
-			string entradaDescricao = Console.ReadLine();
-
-			Serie novaSerie = new Serie(id: repositorio.ProximoId(),
-										genero: (Genero)entradaGenero,
-										titulo: entradaTitulo,
-										ano: entradaAno,
-										descricao: entradaDescricao);
-
-			repositorio.Insere(novaSerie);
-		}
-
-        private static string ObterOpcaoUsuario()
-		{
-			Console.WriteLine();
-			Console.WriteLine("Dioflix a seu dispor!!!");
-			Console.WriteLine("Informe a opção desejada:");
-
-			Console.WriteLine("1- Listar séries");
-			Console.WriteLine("2- Inserir nova série");
-			Console.WriteLine("3- Atualizar série");
-			Console.WriteLine("4- Excluir série");
-			Console.WriteLine("5- Visualizar série");
-			Console.WriteLine("C- Limpar Tela");
-			Console.WriteLine("X- Sair");
-			Console.WriteLine();
-
-			string opcaoUsuario = Console.ReadLine().ToUpper();
-			Console.WriteLine();
-			return opcaoUsuario;
-		}
+            string userOption = Console.ReadLine().ToUpper();
+            Console.WriteLine();
+            return userOption;
+        }
     }
 }

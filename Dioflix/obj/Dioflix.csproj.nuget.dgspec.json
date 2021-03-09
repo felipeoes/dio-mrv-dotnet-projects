@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\efs005099\\Documents\\Projects\\DIO\\dio-mrv-dotnet-projects\\Dioflix\\Dioflix.csproj": {}
+    "C:\\Users\\Felipe\\Documents\\DIO\\dio-mrv-dotnet-projects\\Dioflix\\Dioflix.csproj": {}
   },
   "projects": {
-    "C:\\Users\\efs005099\\Documents\\Projects\\DIO\\dio-mrv-dotnet-projects\\Dioflix\\Dioflix.csproj": {
+    "C:\\Users\\Felipe\\Documents\\DIO\\dio-mrv-dotnet-projects\\Dioflix\\Dioflix.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\efs005099\\Documents\\Projects\\DIO\\dio-mrv-dotnet-projects\\Dioflix\\Dioflix.csproj",
+        "projectUniqueName": "C:\\Users\\Felipe\\Documents\\DIO\\dio-mrv-dotnet-projects\\Dioflix\\Dioflix.csproj",
         "projectName": "Dioflix",
-        "projectPath": "C:\\Users\\efs005099\\Documents\\Projects\\DIO\\dio-mrv-dotnet-projects\\Dioflix\\Dioflix.csproj",
-        "packagesPath": "C:\\Users\\efs005099\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\efs005099\\Documents\\Projects\\DIO\\dio-mrv-dotnet-projects\\Dioflix\\obj\\",
+        "projectPath": "C:\\Users\\Felipe\\Documents\\DIO\\dio-mrv-dotnet-projects\\Dioflix\\Dioflix.csproj",
+        "packagesPath": "C:\\Users\\Felipe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Felipe\\Documents\\DIO\\dio-mrv-dotnet-projects\\Dioflix\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\efs005099\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Felipe\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Users\\efs005099\\Documents\\MyFeed": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
