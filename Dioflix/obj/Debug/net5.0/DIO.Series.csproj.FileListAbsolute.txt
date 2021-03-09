@@ -1,0 +1,16 @@
+C:\Users\efs005099\Documents\Projects\DIO\dio-mrv-dotnet-projects\Dioflix\bin\Debug\net5.0\DIO.Series.exe
+C:\Users\efs005099\Documents\Projects\DIO\dio-mrv-dotnet-projects\Dioflix\bin\Debug\net5.0\DIO.Series.deps.json
+C:\Users\efs005099\Documents\Projects\DIO\dio-mrv-dotnet-projects\Dioflix\bin\Debug\net5.0\DIO.Series.runtimeconfig.json
+C:\Users\efs005099\Documents\Projects\DIO\dio-mrv-dotnet-projects\Dioflix\bin\Debug\net5.0\DIO.Series.runtimeconfig.dev.json
+C:\Users\efs005099\Documents\Projects\DIO\dio-mrv-dotnet-projects\Dioflix\bin\Debug\net5.0\DIO.Series.dll
+C:\Users\efs005099\Documents\Projects\DIO\dio-mrv-dotnet-projects\Dioflix\bin\Debug\net5.0\ref\DIO.Series.dll
+C:\Users\efs005099\Documents\Projects\DIO\dio-mrv-dotnet-projects\Dioflix\bin\Debug\net5.0\DIO.Series.pdb
+C:\Users\efs005099\Documents\Projects\DIO\dio-mrv-dotnet-projects\Dioflix\obj\Debug\net5.0\DIO.Series.csprojAssemblyReference.cache
+C:\Users\efs005099\Documents\Projects\DIO\dio-mrv-dotnet-projects\Dioflix\obj\Debug\net5.0\DIO.Series.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\efs005099\Documents\Projects\DIO\dio-mrv-dotnet-projects\Dioflix\obj\Debug\net5.0\DIO.Series.AssemblyInfoInputs.cache
+C:\Users\efs005099\Documents\Projects\DIO\dio-mrv-dotnet-projects\Dioflix\obj\Debug\net5.0\DIO.Series.AssemblyInfo.cs
+C:\Users\efs005099\Documents\Projects\DIO\dio-mrv-dotnet-projects\Dioflix\obj\Debug\net5.0\DIO.Series.csproj.CoreCompileInputs.cache
+C:\Users\efs005099\Documents\Projects\DIO\dio-mrv-dotnet-projects\Dioflix\obj\Debug\net5.0\DIO.Series.dll
+C:\Users\efs005099\Documents\Projects\DIO\dio-mrv-dotnet-projects\Dioflix\obj\Debug\net5.0\ref\DIO.Series.dll
+C:\Users\efs005099\Documents\Projects\DIO\dio-mrv-dotnet-projects\Dioflix\obj\Debug\net5.0\DIO.Series.pdb
+C:\Users\efs005099\Documents\Projects\DIO\dio-mrv-dotnet-projects\Dioflix\obj\Debug\net5.0\DIO.Series.genruntimeconfig.cache
