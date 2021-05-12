@@ -1,0 +1,16 @@
+C:\Users\felip\OneDrive\Email attachments\Documentos\PROJECTS\DIO\dio-mrv-dotnet-projects\Diobank\bin\Debug\net5.0\Diobank.exe
+C:\Users\felip\OneDrive\Email attachments\Documentos\PROJECTS\DIO\dio-mrv-dotnet-projects\Diobank\bin\Debug\net5.0\Diobank.deps.json
+C:\Users\felip\OneDrive\Email attachments\Documentos\PROJECTS\DIO\dio-mrv-dotnet-projects\Diobank\bin\Debug\net5.0\Diobank.runtimeconfig.json
+C:\Users\felip\OneDrive\Email attachments\Documentos\PROJECTS\DIO\dio-mrv-dotnet-projects\Diobank\bin\Debug\net5.0\Diobank.runtimeconfig.dev.json
+C:\Users\felip\OneDrive\Email attachments\Documentos\PROJECTS\DIO\dio-mrv-dotnet-projects\Diobank\bin\Debug\net5.0\Diobank.dll
+C:\Users\felip\OneDrive\Email attachments\Documentos\PROJECTS\DIO\dio-mrv-dotnet-projects\Diobank\bin\Debug\net5.0\ref\Diobank.dll
+C:\Users\felip\OneDrive\Email attachments\Documentos\PROJECTS\DIO\dio-mrv-dotnet-projects\Diobank\bin\Debug\net5.0\Diobank.pdb
+C:\Users\felip\OneDrive\Email attachments\Documentos\PROJECTS\DIO\dio-mrv-dotnet-projects\Diobank\obj\Debug\net5.0\Diobank.csprojAssemblyReference.cache
+C:\Users\felip\OneDrive\Email attachments\Documentos\PROJECTS\DIO\dio-mrv-dotnet-projects\Diobank\obj\Debug\net5.0\Diobank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\felip\OneDrive\Email attachments\Documentos\PROJECTS\DIO\dio-mrv-dotnet-projects\Diobank\obj\Debug\net5.0\Diobank.AssemblyInfoInputs.cache
+C:\Users\felip\OneDrive\Email attachments\Documentos\PROJECTS\DIO\dio-mrv-dotnet-projects\Diobank\obj\Debug\net5.0\Diobank.AssemblyInfo.cs
+C:\Users\felip\OneDrive\Email attachments\Documentos\PROJECTS\DIO\dio-mrv-dotnet-projects\Diobank\obj\Debug\net5.0\Diobank.csproj.CoreCompileInputs.cache
+C:\Users\felip\OneDrive\Email attachments\Documentos\PROJECTS\DIO\dio-mrv-dotnet-projects\Diobank\obj\Debug\net5.0\Diobank.dll
+C:\Users\felip\OneDrive\Email attachments\Documentos\PROJECTS\DIO\dio-mrv-dotnet-projects\Diobank\obj\Debug\net5.0\ref\Diobank.dll
+C:\Users\felip\OneDrive\Email attachments\Documentos\PROJECTS\DIO\dio-mrv-dotnet-projects\Diobank\obj\Debug\net5.0\Diobank.pdb
+C:\Users\felip\OneDrive\Email attachments\Documentos\PROJECTS\DIO\dio-mrv-dotnet-projects\Diobank\obj\Debug\net5.0\Diobank.genruntimeconfig.cache
